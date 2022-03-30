@@ -5,5 +5,5 @@ będze później zgadywane. Po 10 ◙błędnie podanych literach lub po odgadni�
 Druga z gier to dość znana gra, czyli "Papier, Kamień, Nożyce", gra polega na tym, że wpisujemy, które z trzech opcji wybieramy, a dalej komputer losuje jaką opcję
 on wybiera i wyświetla nam końcowy wynik.
 
-#Projekt Stworzyły:
-##Karolina Stolarek i Oliwia Kaszuba
+Projekt Stworzyły:
+Karolina Stolarek i Oliwia Kaszuba
