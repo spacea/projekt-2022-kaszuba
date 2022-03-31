@@ -1,10 +1,15 @@
 #hangman
 
 gameHangman = function(x) {
+  words = c("kij", "ognisko", "motor", "rower", "helikopter", "pies", "brzoza",
+            "dom", "hotel", "kubek", "drzewo", "deszcz", "dziecko", "plakat",
+            "szafa", "dywan", "monitor", "nauczyciel", "lampa", "okno", "sklep")
+  index = sample(1:21, 1)
+  wybor = words[index]
   
-  cat(x,"\n")
+  cat(wybor,"\n")
   
-  wektor = replicate(nchar(x), FALSE)
+  wektor = replicate(nchar(wybor), FALSE)
   
   
   for(i in 1 : 15) {
@@ -23,7 +28,7 @@ gameHangman = function(x) {
     index = 1
     liczba_zgadnietych = 0
     t = 0
-    for(sprawdzna_litera in strsplit(x,"")[[1]])
+    for(sprawdzna_litera in strsplit(wybor,"")[[1]])
     {
      
       if(sprawdzna_litera == podana_litera)
@@ -53,17 +58,17 @@ gameHangman = function(x) {
     }else{
       cat("Już istnieje\n")
     }
-    if(liczba_zgadnietych == nchar(x))
+    if(liczba_zgadnietych == nchar(wybor))
     {
       
-      return("wygrałeś")
+      return(cat("WYGRAŁEŚ"))
     }
     
   }
   
-  return("przegrałeś")
+  return(cat(c("PRZEGRAŁEŚ, prawidłowa odpowiedź to:", wybor)))
 }
 
 
 
-gameHangman("wisielec")
+gameHangman(wybor)
