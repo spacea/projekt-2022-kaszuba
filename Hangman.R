@@ -7,8 +7,6 @@ gameHangman = function(x) {
   index = sample(1:21, 1)
   wybor = words[index]
   
-  cat(wybor,"\n")
-  
   wektor = replicate(nchar(wybor), FALSE)
   
   
